@@ -1,0 +1,20 @@
+{
+    'name': 'Electronic Store Sale',
+    'version': '17.0.1.0',
+    'license': 'LGPL-3',
+    'category': 'Sale',
+    "sequence": 3,
+    'summary': 'Electronic Store Sale',
+    'complexity': "easy",
+    'author': 'Hoang Group',
+    'depends': ['base', 'sale', 'sale_management'],
+    'data': [
+        "views/sale_order_views.xml",
+        "views/menu_sale.xml",
+    ],
+    'demo': [],
+    'images': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+}

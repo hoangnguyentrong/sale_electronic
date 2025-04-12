@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_sale_order_form_inherit_electronic_store_sale" model="ir.ui.view">
+            <field name="name">view.sale.order.form.inherit.electronic.store.sale</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="sale_order_template_id" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <field name="payment_term_id" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+<!--                <field name="date_order" position="attributes">-->
+<!--                    <attribute name="invisible">1</attribute>-->
+<!--                </field>-->
+                <div class="o_td_label" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </div>
+                <field name="note" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
+                <page name="optional_products" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </page>
+                <page name="other_information" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </page>
+                <page name="customer_signature" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </page>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem
+            id="menu_root_todo_list"
+            name="OWL Tutorial Dashboard"
+            sequence="10"
+    />
+    <menuitem
+            id="menu_owl_sales_dashboard"
+            parent="menu_root_todo_list"
+            name="Sales Dashboard"
+            sequence="15"
+            action="action_owl_sales_dashboard"
+    />
+</odoo>

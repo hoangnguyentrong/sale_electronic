@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.actions.client" id="action_owl_sales_dashboard">
+        <field name="name">Sales Dashboard</field>
+        <field name="tag">owl.sales_dashboard</field>
+    </record>
+
+
+</odoo>
