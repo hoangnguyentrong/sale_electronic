@@ -12,9 +12,9 @@
                 <field name="payment_term_id" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </field>
-<!--                <field name="date_order" position="attributes">-->
-<!--                    <attribute name="invisible">1</attribute>-->
-<!--                </field>-->
+                <field name="date_order" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </field>
                 <div class="o_td_label" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </div>
@@ -30,6 +30,62 @@
                 <page name="customer_signature" position="attributes">
                     <attribute name="invisible">1</attribute>
                 </page>
+                <button id="send_by_email_primary" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <button name="action_preview_sale_order" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <!-- <button id="create_invoice" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button> -->
+                <button id="create_invoice_percentage" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <!-- <button id="send_by_email" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button> -->
+                <button name="action_quotation_send" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <button name="action_draft" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <button name="action_preview_sale_order" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <field name="order_line" position="attributes">
+                    <attribute name="readonly">state in ('sale', 'cancel') or locked</attribute>
+                </field>
+                <!-- <xpath expr="//button[@name='action_view_delivery']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath> -->
+                <!-- <xpath expr="//field[@name='add_section_control']/tree/control/create[1]" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath> -->
+                <xpath expr="//page[@name='order_lines']" position="after">
+                <page string="Bảng theo dõi">
+                         <field name="audit_log_ids">
+                             <tree create='false' edit='false'>
+                                 <field name="name"/>
+                                 <field name="create_date"/>
+                                 <field name="user_id"/>
+                             </tree>
+                             <form>
+                                 <field name="line_ids">
+                                    <tree create='false' edit='false'>
+                                        <field name="field_description"/>
+                                        <field name="field_name"/>
+                                        <field name="old_value_text"/>
+                                        <field name="new_value_text"/>
+                                    </tree>
+                                </field>
+                             </form>
+                         </field>
+
+                    </page>
+                </xpath>
+            
             </field>
         </record>
     </data>

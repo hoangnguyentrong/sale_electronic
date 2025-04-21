@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_invoice_sale_electronic" 
+        name="Hóa đơn"
+        parent="sale.sale_menu_root" 
+        sequence="31"
+    />
+    <menuitem id="menu_bill_sale_electronic"
+        sequence="1"
+        parent="menu_invoice_sale_electronic"
+        action="account.action_move_out_invoice_type"
+        name="Hóa đơn"
+    />
+</odoo>

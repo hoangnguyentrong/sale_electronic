@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="menu_user_sale_electronic" 
+            name="Người dùng"
+            parent="sale.sale_menu_root" 
+            sequence="31"
+    />
+    <menuitem id="menu_event_my_expenses_all"
+            sequence="1"
+            parent="menu_user_sale_electronic"
+            action="base.action_res_users"
+            name="Người dùng"/>
+</odoo>
