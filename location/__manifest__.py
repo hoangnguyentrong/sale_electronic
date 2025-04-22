@@ -1,0 +1,21 @@
+{
+    'name': 'Electronic Store Sale Location',
+    'version': '17.0.1.0',
+    'license': 'LGPL-3',
+    'category': 'Sale',
+    "sequence": 3,
+    'summary': 'Electronic Store Sale Location',
+    'complexity': "easy",
+    'author': 'Hoang Group',
+    'depends': ['base', 'sale', 'sale_management', 'product', 'report_xlsx', 'account'],
+    'data': [
+        "security/ir.model.access.csv",
+        "views/location_view.xml",
+        "views/menu.xml",
+    ],
+    'demo': [],
+    'images': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+}

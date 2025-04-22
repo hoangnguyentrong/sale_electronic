@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem 
+    id="menu_location" 
+    parent="sale.sale_menu_root"
+    name="Location" 
+    sequence="10" 
+    />    
+    <menuitem 
+    id="menu_master_location" 
+    parent = 'menu_location'
+    name="Location" 
+    sequence="10" 
+    action="action_master_location"
+    />    
+    <menuitem 
+    id="menu_location_config" 
+    parent="sale.menu_sale_config"
+    name="Location" 
+    sequence="10" 
+    /> 
+    <menuitem 
+    id="menu_master_city" 
+    parent = 'menu_location_config'
+    name="City" 
+    sequence="10" 
+    action="action_master_city"
+    />    
+    <menuitem 
+    id="menu_master_district" 
+    parent = 'menu_location_config'
+    name="District" 
+    sequence="10" 
+    action="action_master_district"
+    />    
+    <menuitem 
+    id="menu_master_ward" 
+    parent = 'menu_location_config'
+    name="Ward" 
+    sequence="10" 
+    action="action_master_ward"
+    />
+</odoo>

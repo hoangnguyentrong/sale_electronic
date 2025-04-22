@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_master_location_manager,master_location_manager,location.model_master_location,,1,1,1,1
+access_master_city_manager,master_city_manager,location.model_master_city,,1,1,1,1
+access_master_district_manager,master_district_manager,location.model_master_district,,1,1,1,1
+access_master_ward_manager,master_ward_manager,location.model_master_ward,,1,1,1,1
